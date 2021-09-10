@@ -1,0 +1,36 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "learning reactjs ",
+  "main": "index.js",
+  "author": "harishkumarforever",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --watch",
+    "build-babel": "babel src/app.js --out-file=public/src/app.js --presets=react,env --watch",
+    "server": "live-server public/",
+    "dev-server": "webpack serve"
+  },
+  "dependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/preset-env": "^7.15.4",
+    "@babel/preset-react": "^7.14.5",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.2.0",
+    "live-server": "^1.2.1",
+    "mini-css-extract-plugin": "^2.2.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-modal": "^3.14.3",
+    "react-router-dom": "^5.3.0",
+    "sass": "^1.39.2",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "webpack": "5",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "3.11.2"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,6 @@
+css-loader 
+node-sass
+normalize.css
+sass-loader
+style-loader
+validator
