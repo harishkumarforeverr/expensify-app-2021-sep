@@ -1,8 +1,12 @@
 import React from 'react';
+import ExpenseList from './ExpenseList';
+import ExpenseListFilter from './ExpenseListFilter';
+
 const DashBoardExpensify=()=>{
     return (
-        <div>
-        <p> these is the dash board page </p>
+        <div> 
+            <ExpenseListFilter />
+            <ExpenseList /> 
         </div>
     )
 }

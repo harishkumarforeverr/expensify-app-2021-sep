@@ -1,11 +1,11 @@
 import React from 'react';
-import { BrowserRouter,Route,Switch,Link ,NavLink} from 'react-router-dom';
-import AddExpensePage from "./AddExpensePage";
-import DashBoardExpensify from "./DashBoardExpensify";
-import EditExpensePage from "./EditExpensePage";
-import HelpExpensePage from "./HelpExpensePage";
-import Header from "./Header";
-import PageNotPage from "./PageNotPage";
+import { BrowserRouter,Route,Switch} from 'react-router-dom';
+import AddExpensePage from "../components/AddExpensePage";
+import DashBoardExpensify from "../components/DashBoardExpensify";
+import EditExpensePage from "../components/EditExpensePage";
+import HelpExpensePage from "../components/HelpExpensePage";
+import Header from "../components/Header";
+import PageNotPage from "../components/PageNotPage";
 
 const AppRouter=()=>( 
       <BrowserRouter>
@@ -21,5 +21,6 @@ const AppRouter=()=>(
         </div>
       </BrowserRouter> 
 );
+
 
 export default AppRouter;

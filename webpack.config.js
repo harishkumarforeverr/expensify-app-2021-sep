@@ -1,5 +1,4 @@
-const path=require("path");  
-const miniCssExtractPlugin =require("mini-css-extract-plugin"); 
+const path=require("path");   
 
 module.exports={
     entry:"./src/app.js",
@@ -22,7 +21,7 @@ module.exports={
                 }
             }, 
             {
-                test: /\.s[ac]ss$/i,
+                test: [/\.s[ac]ss$/i,/\.css$/i],
                 use: [
                   // Creates `style` nodes from JS strings
                   "style-loader",
@@ -31,18 +30,7 @@ module.exports={
                   // Compiles Sass to CSS
                   "sass-loader",
                 ],
-              },
-            // {
-            //     test: /\.s[ac]ss$/i,
-            //     use: [
-            //       // Creates `style` nodes from JS strings
-            //        "style-loader",
-            //       // Translates CSS into CommonJS
-            //        "css-loader",
-            //       // Compiles Sass to CSS
-            //       "sass-loader",
-            //     ],
-            //   },
+              },  
         ]
     },
     devtool : 'cheap-module-source-map',
